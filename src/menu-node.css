@@ -1,0 +1,140 @@
+.menu-node {
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 5px;
+  background: white;
+  min-width: 250px;
+  min-height: 200px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.menu-node .node-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-height: 150px;
+  overflow: hidden;
+}
+
+.menu-node .node-header {
+  font-weight: bold;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+}
+
+.edit-node-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  transition: background-color 0.2s;
+}
+
+.edit-node-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.menu-node .node-type {
+  font-size: 10px;
+  color: #777;
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-grow: 1;
+  min-height: 50px;
+  max-height: none;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  width: 100%;
+  flex-basis: 0;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 8px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  min-height: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  word-break: break-word;
+  flex-shrink: 0;
+}
+
+.menu-item-content {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.color-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.add-item-container {
+  display: flex;
+  margin-top: 5px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.menu-input {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.add-btn {
+  padding: 5px 10px;
+  background-color: #0041d0;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #ff4d4d;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+.remove-btn:hover {
+  color: #ff0000;
+}

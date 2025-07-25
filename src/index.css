@@ -1,0 +1,142 @@
+/* Remove import of non-existent file */
+
+html,
+body,
+#root {
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+/* Match the root ID with what's in index.html */
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+.dndflow {
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+  height: 100vh; /* Make it take full viewport height */
+}
+
+.dndflow aside {
+  border-right: 1px solid #eee;
+  padding: 15px 10px;
+  font-size: 12px;
+  background: #fcfcfc;
+}
+
+.dndflow aside .description {
+  margin-bottom: 10px;
+}
+
+.dndflow .dndnode {
+  height: 20px;
+  padding: 4px;
+  border: 1px solid #1a192b;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+}
+
+.dndflow .dndnode.input {
+  border-color: #0041d0;
+}
+
+.dndflow .dndnode.output {
+  border-color: #ff0072;
+}
+
+.dndflow .reactflow-wrapper {
+  flex-grow: 1;
+  height: calc(100vh - 20px); /* Use viewport height for full page coverage */
+  width: 100%;
+}
+
+.dndflow .selectall {
+  margin-top: 10px;
+}
+
+/* ...existing code... */
+
+/* Style for the TextUpdater node */
+.text-updater-node {
+  width: 100%;
+  min-width: 250px;
+  min-height: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #222;
+  border: 1px solid #1a192b;  /* Add border to match other nodes */
+  background-color: white;    /* Add background color */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+.text-updater-node label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.text-updater-node input {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 2px;
+  box-sizing: border-box;
+}
+
+/* Make text inputs usable in nodes by preventing drag behavior */
+.nodrag {
+  pointer-events: all;
+}
+/* ...existing styles... */
+
+/* Dropdown Node styles */
+.dropdown-node {
+  width: 100%;
+  min-width: 250px;
+  min-height: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #222;
+  border: 1px solid #1a192b;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-node label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.dropdown-node select {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 2px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .dndflow {
+    flex-direction: row;
+  }
+
+  .dndflow aside {
+    width: 20%;
+    max-width: 250px;
+  }
+}

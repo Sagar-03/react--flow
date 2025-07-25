@@ -1,0 +1,67 @@
+/* Node styling for a Botpress-like interface */
+
+.text-updater-node,
+.dropdown-node {
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 200px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.node-content {
+  padding: 8px;
+}
+
+.node-header {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.node-type {
+  font-size: 11px;
+  margin-top: 8px;
+  text-align: right;
+  color: #888;
+  font-style: italic;
+}
+
+.text-updater-node input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 5px 0;
+}
+
+.dropdown-node .dropdown-select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.text-updater-node {
+  background-color: #e3f2fd;
+  border: 1px solid #2196f3;
+}
+
+.dropdown-node {
+  background-color: #f3e5f5;
+  border: 1px solid #9c27b0;
+}
+
+/* Handle styles */
+.react-flow__handle {
+  width: 10px;
+  height: 10px;
+}
+
+.react-flow__handle.source {
+  background-color: #4caf50;
+}
+
+.react-flow__handle.target {
+  background-color: #f44336;
+}
